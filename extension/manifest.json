@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "Save Me!",
+    "version": "1.0",
+    "browser_action": {
+        "default_title": "Take Me There",
+        "default_popup": "popup.html"
+    },
+
+    "author": "Jamie Charry",
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "omnibox": {
+        "keyword": "send"
+    },
+    "permissions": [
+        "tabs",
+        "downloads",
+        "notifications",
+        "webRequest",
+        "webRequestBlocking",
+        "*://*.google.com/",
+        "<all_urls>"
+    ]
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Index</title>
+        <link rel='stylesheet' href='styles/style.css' />
+    </head>
+    <body>
+        <div class='page'>
+            <p>Oh thank god, someone's here.  I was starting to lose my mind.</p>
+            <p>I don't know where I am.  I went to bed last night, and woke up today in a foreign place.  I'm stuck in a room, no idea where.  Can you help me?</p>
+            <p>I don't have anything with me except for my PDA. I don't understand why, but the only connection my device can make apparently leads me to you.  No other traffic seems to get through.  Email, calls, web traffic, all blocked.  I can't explain it. I need help getting out of here and you're the only one who can hear me.</p>
+            <p>You should be able to send messages to me through this window.</p>
+            <p>So tell me, <strong>can you help me?</strong></p>
+        </div>
+
+        <div id='popup'>
+            <p>HINT: type 'send ' into the omnibox, followed by your message.  Then hit enter to send the message</p>
+        </div>
+
+        <script type='text/javascript'>
+            setTimeout(() => {
+                document.getElementById('popup').style.bottom = '100px';
+            }, 5000)
+        </script>
+    </body>
+</html>

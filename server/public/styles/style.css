@@ -1,0 +1,31 @@
+/*
+ * style.css
+ * Copyright (C) 2017 jamiecharry
+ *
+ * Distributed under terms of the MIT license.
+ */
+
+body {
+	background: darkgray;
+	color: black;
+    font-family: Roboto;
+}
+
+.page {
+    margin: 6rem;
+    padding: 3rem;
+    background-color: white;
+}
+
+#popup {
+    position: absolute;
+    height: 100px;
+    bottom: -200px;
+    transition: all 0.5s;
+    background-color: green;
+    margin: 0 12rem;
+}
+#popup p {
+    margin: 1rem;
+}
+
